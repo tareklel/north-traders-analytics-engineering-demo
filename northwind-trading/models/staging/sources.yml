@@ -1,0 +1,9 @@
+version: 2
+sources:
+  - name: northwind
+    schema: analytics_engineer
+    database: rising-beach-319705
+    tables:
+      - name: customer
+        identifier: customer
+      - name: employee_privileges
