@@ -1,3 +1,12 @@
+{{
+  config(
+    partition_by={
+      "field": "order_date",
+      "data_type": "date"
+    }
+  )
+}}
+
 WITH
 source
 AS
@@ -6,7 +15,7 @@ AS
     id	as order_id,
     employee_id,
     customer_id,
-    order_date,
+    CAST(order_date AS DATE) AS order_date,
     shipped_date,
     shipper_id,
     ship_name,
