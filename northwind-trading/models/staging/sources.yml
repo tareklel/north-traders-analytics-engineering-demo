@@ -6,4 +6,9 @@ sources:
     tables:
       - name: customer
         identifier: customer
+      - name: employees
+        identifier: employees
       - name: employee_privileges
+        identifier: employee_privileges
+      - name: orders
+        identifier: orders
